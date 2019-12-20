@@ -1,0 +1,5 @@
+[Scheduler]
+Time = 2
+
+[MySql]
+db=127.0.0.1
