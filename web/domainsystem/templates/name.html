@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for k in context.domain_name %}
+  <p>
+      {{ k.name }}
+  </p>
+{% endfor %}
+{% endblock %}
