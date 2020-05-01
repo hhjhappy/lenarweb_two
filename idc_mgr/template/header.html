@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<div class="container">
+	<nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="http://www.weather.com.cn">
+				<img src="{% static '/images/website_logo.png' %}" width="150px" style="margin-top:-15px"></a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav" role="navigation">
+            </ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{% url 'visitorecord:visitorecord' %}">登记</a></li> 
+			</ul>
+        </div>
+    </nav>
+</div>

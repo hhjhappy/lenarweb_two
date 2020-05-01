@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<p><span class="err_font">错误</span><span id="sp">5</span>秒后重新<a href="{% url 'visitorecord:visitorecord' %}">执行</a></p>
+<script>
+    onload=function () {
+        setInterval(go,1000)
+    };
+    var x=4;
+    function go() {
+
+        if (x>=0){
+            document.getElementById("sp").innerText=x;
+        }else {
+            location.href="{% url 'visitorecord:visitorecord' %}";
+        }
+        x--;
+    }
+</script>
+{% endblock %}
+

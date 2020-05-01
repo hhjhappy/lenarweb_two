@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+<p><span class="err_font">注册失败</span><span id="sp">5</span>秒后重新<a href="{% url 'register:visitoregister' %}">注册</a></p>
+<script>
+    onload=function () {
+        setInterval(go,1000)
+    };
+    var x=4;
+    function go() {
+
+        if (x>=0){
+            document.getElementById("sp").innerText=x;
+        }else {
+            location.href="{% url 'register:visitoregister' %}";
+        }
+        x--;
+    }
+</script>
+{% endblock %}
+

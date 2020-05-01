@@ -1,0 +1,20 @@
+.span_style1{
+	display:-moz-inline-box;
+	display:inline-block;
+	width: 250px;
+	hight: 50px;
+	boder:2px solid #000;
+}
+
+.err_font{
+	font-size:50px;
+	font-weight:bold;
+	color:#FF0000;
+}
+
+.success_font{
+	font-size:50px;
+	font-weight:bold;
+	color:#00FF00;
+}
+

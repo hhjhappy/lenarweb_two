@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge Chrome=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="/static/images/logo.png"
+	mce_href="http://myip/static/images/logo.png" type="image/x-icon" >
+	<title>华风四五层机房进出管理系统</title>
+	<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/static/css/mystyle.css"> 
+</head>
+<body>
+	{% include "header.html" %}
+	<div class="container">
+		{% block content %}
+		{% endblock %}
+	</div>
+	{% include "footer.html" %}
+	{% block javascript %}{% endblock %}
+</body>
+</html>
