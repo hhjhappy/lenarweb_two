@@ -1,0 +1,16 @@
+.top-box{
+	border: black 1px solid;
+	text-align: center;
+	background-color: #CCCCCC;
+	margin-top: 5%;
+	height: 400px;
+}
+
+.Hyperlinks {
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin-left: 47%;
+	margin-right: 50%;
+
+}
